@@ -1,0 +1,68 @@
+:root[color-thema="color"] {
+  --background: #b9beff;
+  --boxColor: #fff;
+  --fontColor: #fff;
+}
+
+:root[color-thema="dark"] {
+  --background: #000;
+  --boxColor: #2f2f2f;
+  --fontColor: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* 스크롤 제거 */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+
+header > span {
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+#small_circle {
+  position: absolute;
+  width: 32rem;
+  height: 32rem;
+  top: -10rem;
+  left: -10rem;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+#big_circle {
+  position: absolute;
+  width: 46rem;
+  height: 46rem;
+  bottom: -5rem;
+  right: -18rem;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+#x {
+  display: none;
+}
